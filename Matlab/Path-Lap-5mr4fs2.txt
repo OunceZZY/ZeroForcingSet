@@ -4,8 +4,3 @@ Adjacency list:
 
 Field size: 2
 
-
-ret =
-
-     []
-
