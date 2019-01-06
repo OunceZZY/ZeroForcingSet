@@ -1,0 +1,9 @@
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbquit; end
+run
+[Warning: File 'UniToCyc-11-Dec-2018 00:50:09-4mr3fs20.txt' not found.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', '/Users/OwenZhang/Desktop/MinimumZeroForcingSet/ZeroForcingSet/Matlab/run.m', 11)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('/Users/OwenZhang/Desktop/MinimumZeroForcingSet/ZeroForcingSet/Matlab/run.m',11,0)">line 11</a>)] 

@@ -1,0 +1,4 @@
+if system_dependent('IsDebugMode')==1, dbquit all; end
+run
+[Warning: File 'LeafToPath-23-Nov-2018 12:36:22-5mr4fs7.txt' not found.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', '/Users/OwenZhang/Desktop/MinimumZeroForcingSet/ZeroForcingSet/Matlab/run.m', 11)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('/Users/OwenZhang/Desktop/MinimumZeroForcingSet/ZeroForcingSet/Matlab/run.m',11,0)">line 11</a>)] 

@@ -3,18 +3,23 @@
 %c = addEdges(ret,[1,1;3,4],3,modelSize,50);
 %GraphType = 'Theta-2-1-2';
 GraphType = 'UniToCyc';
-modelSize = 5;
-targetRank = 4;
-fieldSize = 7;
+G = 6;
+targetRank = 5;
+fieldSize = 8;
 date= datetime('now');
-DiaryName = strcat (GraphType,'-',datestr(date),'-',num2str(modelSize),'mr',num2str(targetRank),'fs',num2str(fieldSize),'.txt');
+DiaryName = strcat (GraphType,'-',datestr(date),'-',num2str(G),'mr',num2str(targetRank),'fs',num2str(fieldSize),'.txt');
 delete(DiaryName);
 diary(DiaryName);
 
-ac = [  1,2,3,4;
-        2,3,4,5];
-Lapl = Laplacian(ac,modelSize);
-kap = Extension(Lapl, [1,2,3,4,5,6],fieldSize,targetRank);
+ac = [  1,2,3,4,5;
+        2,3,4,5,6];
+Lapl = Laplacian(ac,G);
+kap = Extension(Lapl, [7,6,5,4,3,2,1],fieldSize,targetRank);
+%kap2 = [];
+%for i = 1:size(kap,3)
+%    rec = Extension(kap(:,:,i), [1,6,7],fieldSize,targetRank+1);
+%    kap2 = cat(3,kap2, rec) ;
+%end
 fprintf("Lngth: %d\n",size(kap,3));
 diary off
 
@@ -93,6 +98,7 @@ for p= -fieldSize:fieldSize
             disp(matrix);
             result = cat(3,result,matrix);
         end
+        
     end
 end
 end

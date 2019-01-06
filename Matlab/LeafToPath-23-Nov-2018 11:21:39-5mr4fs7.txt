@@ -1,0 +1,62 @@
+Rank: 4
+     1    -1     0     0     0    -1
+    -1     2    -1     0     0     0
+     0    -1     2    -1     0     0
+     0     0    -1     2    -1     0
+     0     0     0    -1     1     1
+    -1     0     0     0     1     4
+
+Rank: 4
+     1    -1     0     0     0     1
+    -1     2    -1     0     0     0
+     0    -1     2    -1     0     0
+     0     0    -1     2    -1     0
+     0     0     0    -1     1    -1
+     1     0     0     0    -1     4
+
+{Index in position 3 exceeds array bounds (must not exceed 2).
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', '/Users/OwenZhang/Desktop/MinimumZeroForcingSet/ZeroForcingSet/Matlab/run.m', 20)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('/Users/OwenZhang/Desktop/MinimumZeroForcingSet/ZeroForcingSet/Matlab/run.m',20,0)">line 20</a>)
+    rec = Extension(kap(:,:,i), [1,5,6],fieldSize+1,targetRank);
+} 
+opentoline('/Users/OwenZhang/Desktop/MinimumZeroForcingSet/ZeroForcingSet/Matlab/run.m',20,0)
+length(kap
+ length(kap
+           
+{Error: Invalid expression. When calling a function or indexing a variable, use
+parentheses. Otherwise, check for mismatched delimiters.
+} 
+length(kap)
+
+ans =
+
+     6
+
+length(3,kap)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('length')" style="font-weight:bold">length</a>
+Too many input arguments.
+} 
+length(kap(:,:))
+
+ans =
+
+    12
+
+dim(3,kap)
+{Undefined function or variable 'dim'.
+} 
+size(kap)
+
+ans =
+
+     6     6     2
+
+size(kap,3)
+
+ans =
+
+     2
+
+run
+[Warning: File 'LeafToPath-23-Nov-2018 11:25:38-5mr4fs7.txt' not found.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', '/Users/OwenZhang/Desktop/MinimumZeroForcingSet/ZeroForcingSet/Matlab/run.m', 11)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('/Users/OwenZhang/Desktop/MinimumZeroForcingSet/ZeroForcingSet/Matlab/run.m',11,0)">line 11</a>)] 
